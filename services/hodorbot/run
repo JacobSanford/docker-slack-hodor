@@ -1,0 +1,5 @@
+#!/bin/bash
+umask 000
+
+cd /opt/hodorbot
+exec /sbin/setuser hodor ./rtmbot.py

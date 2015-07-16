@@ -11,7 +11,7 @@ docker run \
        --rm \
        --name hodorbot \
        -e SLACK_TOKEN=<BOT_TOKEN_OBTAINED_FROM_SLACK_INTEGRATION> \
-       jacobsanford/hodorbot
+       jacobsanford/slack-hodor
 ```
 
 ## License

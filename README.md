@@ -1,5 +1,5 @@
 # jacobsanford/slack-hodor
-Docker container : leverages [python-rtmbot](https://github.com/slackhq/python-rtmbot) and [python-rtmbot-hodor](https://github.com/JacobSanford/python-rtmbot-hodor) to listen for mentions of Hodor's name in a Slack channel and replies with a message.
+Docker image : leverages [python-rtmbot](https://github.com/slackhq/python-rtmbot) and [python-rtmbot-hodor](https://github.com/JacobSanford/python-rtmbot-hodor) to listen for mentions of Hodor's name in a Slack channel and replies with a message.
 
 Messages are pre-defined from a basic module import and classified by mood.
 

@@ -6,7 +6,7 @@ Messages are pre-defined from a basic module import and classified by mood.
 The 'mood' of reply is determined by comparing the content of the triggering message against a library of words and human interpreted intent scoring. After mood assignment, a message is chosen based on a 'item drop' type selection process that allows for weighting of responses.
 
 ## Docker
-A [docker image](https://registry.hub.docker.com/u/jacobsanford/slack-hodor/) has been created to deploy this service quickly.
+A [docker hub image](https://registry.hub.docker.com/u/jacobsanford/slack-hodor/) has been created to deploy this service quickly.
 
 ## Usage
 ```

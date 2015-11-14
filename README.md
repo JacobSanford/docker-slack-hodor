@@ -1,4 +1,4 @@
-# jacobsanford/slack-hodor
+# jacobsanford/slack-hodor [![](https://badge.imagelayers.io/jacobsanford/slack-hodor:latest.svg)](https://imagelayers.io/?images=jacobsanford/slack-hodor:latest 'Get your own badge on imagelayers.io')
 Docker image : leverages [python-rtmbot](https://github.com/slackhq/python-rtmbot) and [python-rtmbot-hodor](https://github.com/JacobSanford/python-rtmbot-hodor) to listen for mentions of Hodor's name in a Slack channel and replies with a message.
 
 Messages are pre-defined from a basic module import and classified by mood.

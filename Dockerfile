@@ -15,7 +15,7 @@ RUN apt-get update && \
   apt-get remove --purge -y wget unzip && \
   apt-get autoremove -y && \
   apt-get clean && \
-  rm -rf /var/lib/apt/lists/* && \
+  rm -rf /var/lib/apt/lists/* /tmp/pip-build* && \
   cp doc/example-config/rtmbot.conf . && \
   mv /opt/python-rtmbot /opt/hodorbot
 

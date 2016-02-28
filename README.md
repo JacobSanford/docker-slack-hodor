@@ -1,14 +1,17 @@
 # jacobsanford/slack-hodor [![](https://badge.imagelayers.io/jacobsanford/slack-hodor:latest.svg)](https://imagelayers.io/?images=jacobsanford/slack-hodor:latest 'Get your own badge on imagelayers.io')
-Docker image : leverages [python-rtmbot](https://github.com/slackhq/python-rtmbot) and [python-rtmbot-hodor](https://github.com/JacobSanford/python-rtmbot-hodor) to listen for mentions of Hodor's name in a Slack channel and replies with a message.
+Docker image : leverages [python-rtmbot](https://github.com/slackhq/python-rtmbot) and [python-rtmbot-hodor](https://github.com/JacobSanford/python-rtmbot-hodor) to monitor mentions of Hodor's name in a Slack channel and reply with a message:
 
-Messages are pre-defined from a basic module import and classified by mood.
+![alt text](https://raw.githubusercontent.com/JacobSanford/docker-slack-hodor/master/media/hodor_image_1.png "Hodor in Action")
+
+Hodor's replies are [determined by mood](https://github.com/JacobSanford/python-rtmbot-hodor/blob/master/Hodor/HodorActions.py).
 
 The 'mood' of reply is determined by comparing the content of the triggering message against a library of words and human interpreted intent scoring. After mood assignment, a message is chosen based on a 'item drop' type selection process that allows for weighting of responses.
 
-## Docker
-A [docker hub image](https://registry.hub.docker.com/u/jacobsanford/slack-hodor/) has been created to deploy this service quickly.
+## Quick Start
+A [docker hub image](https://registry.hub.docker.com/u/jacobsanford/slack-hodor/) exists and allows a quick start for this service.
 
-## Usage
++ [Add a bot user](https://api.slack.com/bot-users) to your slack team and obtain the API token.
++ Deploy the image, passing to it the ```SLACK_TOKEN``` environment variable:
 ```
 docker run \
        --rm \

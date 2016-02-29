@@ -8,15 +8,13 @@ Hodor's replies are [determined by mood](https://github.com/JacobSanford/python-
 The 'mood' of reply is determined by comparing the content of the triggering message against a library of words and human interpreted intent scoring. After mood assignment, a message is chosen based on a 'item drop' type selection process that allows for weighting of responses.
 
 ## Quick Start
-A [docker hub image](https://registry.hub.docker.com/u/jacobsanford/slack-hodor/) exists and allows a quick start for this service.
-
-+ [Add a bot user](https://api.slack.com/bot-users) to your slack team and obtain the API token.
-+ Deploy the image, passing to it the ```SLACK_TOKEN``` environment variable:
+1. [Add a bot user](https://api.slack.com/bot-users) to your slack team and obtain the API token.
+2. Deploy the image, passing to it the API token in the ```SLACK_TOKEN``` environment variable:
 ```
 docker run \
        --rm \
        --name hodorbot \
-       -e SLACK_TOKEN=<BOT_TOKEN_OBTAINED_FROM_SLACK_INTEGRATION> \
+       -e SLACK_TOKEN=_API_TOKEN_OBTAINED_FROM_SLACK_INTEGRATION_ \
        jacobsanford/slack-hodor
 ```
 

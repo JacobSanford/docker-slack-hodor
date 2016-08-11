@@ -1,4 +1,4 @@
-# jacobsanford/slack-hodor [![](https://badge.imagelayers.io/jacobsanford/slack-hodor:latest.svg)](https://imagelayers.io/?images=jacobsanford/slack-hodor:latest 'Get your own badge on imagelayers.io')
+# jacobsanford/slack-hodor [![](https://images.microbadger.com/badges/image/jacobsanford/slack-hodor:latest.svg)](http://microbadger.com/images/jacobsanford/slack-hodor:latest "Get your own image badge on microbadger.com")
 Docker image : leverages [python-rtmbot](https://github.com/slackhq/python-rtmbot) and [python-rtmbot-hodor](https://github.com/JacobSanford/python-rtmbot-hodor) to monitor mentions of Hodor's name in a Slack channel and reply with a message:
 
 ![alt text](https://raw.githubusercontent.com/JacobSanford/docker-slack-hodor/master/media/hodor_image_1.png "Hodor in Action")

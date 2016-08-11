@@ -12,7 +12,7 @@ RUN apk add --update \
 WORKDIR /app
 RUN wget -O rtmbot.zip https://github.com/slackhq/python-rtmbot/archive/master.zip && \
   unzip rtmbot.zip && rm rtmbot.zip && \
-  mv python-rtmbot-master/* . && mv doc/example-config/rtmbot.conf . && \
+  mv python-rtmbot-master/* . && mv docs/example-config/rtmbot.conf . && \
   wget -O hodor.zip https://github.com/JacobSanford/python-rtmbot-hodor/archive/master.zip && \
   unzip hodor.zip && rm hodor.zip && \
   mv python-rtmbot-hodor-master plugins/python-rtmbot-hodor && \

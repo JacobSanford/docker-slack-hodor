@@ -8,6 +8,7 @@ RUN apk add --update \
     python \
     py-pip \
     openssl && \
+    pip install websocket-client>=0.44.0 && \
     rm -rf /var/cache/apk/*
 
 WORKDIR /app
